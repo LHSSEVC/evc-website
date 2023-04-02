@@ -1,12 +1,8 @@
-@font-face {
-  font-family: 'Mona Sans';
-  src:
-    url('Mona-Sans.woff2') format('woff2 supports variations'),
-    url('Mona-Sans.woff2') format('woff2-variations');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind utilities;
 
 :root {
-  font-family: 'Mona Sans';
+  font-family: 'Inter', sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,4 +13,9 @@
 
 body {
   margin: 0;
+  background-color: #12101C;
+  color: #FEFFFE;
+}
+
+p {
 }
