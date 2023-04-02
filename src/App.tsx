@@ -1,9 +1,5 @@
 function App() {
-  return (
-    <div>
-      among
-    </div>
-  )
+  return <div className="App">amongus</div>;
 }
 
-export default App
+export default App;
