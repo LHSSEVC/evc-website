@@ -1,0 +1,12 @@
+.navbar {
+    border-bottom: 1px solid #333;
+
+    a {
+        color: #fefffe;
+        text-decoration: none;
+
+        &:hover {
+            color: theme("colors.blue");
+        }
+    }
+}

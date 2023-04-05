@@ -1,21 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @tailwind utilities;
 
 :root {
-  font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0;
-  background-color: #12101C;
-  color: #FEFFFE;
+    margin: 0;
+    background-color: #12101c;
+    color: #fefffe;
 }
 
 p {
+}
+
+a {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: theme("colors.blue");
+    text-decoration: underline;
+
+    &:hover {
+        color: darken(#306ee8, 10%);
+        text-decoration: none;
+    }
 }
