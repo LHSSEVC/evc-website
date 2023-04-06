@@ -2,21 +2,25 @@ import React from "react";
 import "./Card.scss";
 
 interface CardProps {
-    color: string;
+    rgb: string;
     title: string;
+    className: string;
     children: JSX.Element[] | JSX.Element;
 }
 
-function Card({ color, title, children }: CardProps) {
+const Card = ({ rgb, title, children, className }: CardProps) => {
     return (
         <div
-            className="Card rounded-xl border-[color:var(--color)] border-2 shadow-[color:var(--color)] shadow-lg"
-            style={{ "--color": color } as React.CSSProperties}
+            style={{ "--color": rgb } as React.CSSProperties}
+            className={
+                "Card rounded-xl border-[rgb(var(--color))] border-[1px] border-solid shadow-[0_0_1rem_1rem_rgba(var(--color),0.4)] p-8 " +
+                className
+            }
         >
-            <h3>{title}</h3>
+            <h3 className="text-[rgb(var(--color))]">{title}</h3>
             {children}
         </div>
     );
-}
+};
 
 export default Card;
