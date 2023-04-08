@@ -5,8 +5,10 @@ export default {
         extend: {
             colors: {
                 dimmed: "#878593",
-                purple: "#745DC5",
-                blue: "#4899FF",
+                purple: "rgba(116,93,197,1)",
+                blue: "rgba(72,153,255,1)",
+                bg: "#12101C",
+                green: "rgb(48, 242, 149)"
             },
         },
     },

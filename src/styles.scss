@@ -20,22 +20,21 @@ body {
 }
 
 p {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 a {
     cursor: pointer;
     transition: color 0.3s ease;
     color: theme("colors.blue");
-    text-decoration: underline;
-
+    
     &:hover {
-        color: darken(#306ee8, 10%);
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
 
 .gradient {
-    background: linear-gradient(94deg, rgba(116,93,197,1) 0%, rgba(48,242,149,1) 49%, rgba(72,153,255,1) 97%);
+    background: linear-gradient(94deg, theme('colors.purple') 0%, theme('colors.green') 49%, theme('colors.blue') 97%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

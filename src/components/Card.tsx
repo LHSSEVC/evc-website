@@ -14,11 +14,11 @@ const Card = ({ rgb, title, children, icon, className }: CardProps) => {
         <div
             style={{ "--color": rgb } as React.CSSProperties}
             className={
-                "Card border-[rgb(var(--color))] border-solid p-8 " +
+                "Card border-[rgb(var(--color))] brightness-[0.9] shadow-[rgb(var(--color))] border-solid p-8 text-white " +
                 className
             }
         >
-            <h3 className="text-[rgb(var(--color))] brightness-[3] flex justify-between font-semibold mb-4 text-lg">{title} <i className={`bi bi-${icon}`}></i></h3>
+            <h3 className="text-[rgb(var(--color))] brightness-[1.2] flex justify-between font-semibold mb-4 text-lg">{title} <i className={`bi bi-${icon}`}></i></h3>
             {children}
         </div>
     );
