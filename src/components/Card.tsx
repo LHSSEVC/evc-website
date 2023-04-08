@@ -5,10 +5,11 @@ interface CardProps {
     rgb: string;
     title: string;
     className: string;
+    icon: string;
     children: JSX.Element[] | JSX.Element;
 }
 
-const Card = ({ rgb, title, children, className }: CardProps) => {
+const Card = ({ rgb, title, children, icon, className }: CardProps) => {
     return (
         <div
             style={{ "--color": rgb } as React.CSSProperties}
@@ -17,7 +18,7 @@ const Card = ({ rgb, title, children, className }: CardProps) => {
                 className
             }
         >
-            <h3 className="text-[rgb(var(--color))] brightness-[3] font-bold mb-4 text-xl">{title}</h3>
+            <h3 className="text-[rgb(var(--color))] brightness-[3] flex justify-between font-semibold mb-4 text-lg">{title} <i className={`bi bi-${icon}`}></i></h3>
             {children}
         </div>
     );

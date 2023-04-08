@@ -5,8 +5,8 @@ export default {
         extend: {
             colors: {
                 dimmed: "#878593",
-                purple: "#A31AE7",
-                blue: "#0000FF",
+                purple: "#745DC5",
+                blue: "#4899FF",
             },
         },
     },
