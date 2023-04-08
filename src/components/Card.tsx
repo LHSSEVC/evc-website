@@ -1,5 +1,4 @@
 import React from "react";
-import "./Card.scss";
 
 interface CardProps {
     rgb: string;
@@ -14,7 +13,7 @@ const Card = ({ rgb, title, children, icon, className }: CardProps) => {
         <div
             style={{ "--color": rgb } as React.CSSProperties}
             className={
-                "Card border-[rgb(var(--color))] brightness-[0.9] shadow-[rgb(var(--color))] border-solid p-8 text-white " +
+                "border-[rgb(var(--color))] brightness-[0.9] shadow-[rgb(var(--color))] border-solid p-8 text-white rounded-md border-[1px] " +
                 className
             }
         >

@@ -1,3 +1,5 @@
+import world from '../assets/world.png'
+
 const Landing = () => {
     return (
         <div className="Landing flex px-[5rem] h-[95vh] Landing">
@@ -9,7 +11,7 @@ const Landing = () => {
                 <p className='text-dimmed text-xl'>Join a team of creative and curious students who are passionate about pushing the boundaries of what's possible in electric vehicle design and racing.</p>
             </div>
             <div className="flex items-center justify-center w-[40%]">
-                <p>car goes here</p>
+                <a>car goes here</a>
             </div>
         </div>
     );

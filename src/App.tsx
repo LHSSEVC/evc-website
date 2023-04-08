@@ -1,6 +1,6 @@
-import Landing from "./sections/Landing/Landing";
+import Landing from "./sections/Landing";
 import Navbar from "./components/Navbar";
-import About from "./sections/About/About";
+import About from "./sections/About";
 
 function App() {
     return (

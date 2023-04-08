@@ -1,5 +1,4 @@
-import "./About.scss";
-import Card from "../../components/Card";
+import Card from "../components/Card";
 
 const About = () => {
     return (
