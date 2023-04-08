@@ -33,3 +33,10 @@ a {
         text-decoration: none;
     }
 }
+
+.gradient {
+    background: linear-gradient(94deg, rgba(116,93,197,1) 0%, rgba(48,242,149,1) 49%, rgba(72,153,255,1) 97%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
