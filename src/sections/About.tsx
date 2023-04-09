@@ -1,4 +1,7 @@
 import Card from "../components/Card";
+import pic1 from '../assets/pic1.jpg'
+import pic2 from '../assets/pic2.jpg'
+import pic3 from '../assets/pic3.jpg'
 
 const About = () => {
     return (
@@ -15,6 +18,31 @@ const About = () => {
                 <Card rgb="116,93,197" title="Our work" icon='globe' className="w-[25%]">
                     <p>Students gain invaluable industry skills in manufacturing, welding, CAD design, CNC, and engineering design principles. The club allows students to continue their learning outside the classroom and benefit from hands-on experience that cannot be obtained through traditional classroom work and textbooks. Additionally, our work helps students develop teamwork, cooperation, and leadership skills.</p>
                 </Card>
+            </div>
+            <div className='flex px-[6%] mt-[5rem] gap-8'>
+                <div className='w-[50%]'>
+                    <h3 className='text-3xl'>Experiencing the engineering world first-hand</h3>
+                    <p className='mt-8'>
+                    LHSS Electric Vehicle Club has built several cars since its inception in 2009. Our team aims to build at least one new car each year, whilst simultaneously working to modify our pre-existing model.
+                    <br/><br/>
+                    We chose to do this to keep existing students involved and to get new students to join the club. Last year we created a new concept for the 801 car that focused on momentum retention, weight reduction, and a smooth, streamlined appearance involving the use of high-tech manufacturing technologies. This new design performed exceedingly well.
+                    <br/><br/>
+                    We hope EVC can open up opportunities, introduce our students into the engineering world, and let them experience it first-hand. 
+                    </p>
+                </div>
+                <div className='w-[50%] flex gap-4 items-center'>
+                    <div className='w-[50%] h-[100%] flex items-center'>
+                        <img src={pic1} alt='pic1' className='rounded-lg object-cover'></img>
+                    </div>
+                    <div className='w-[50%] flex-col flex gap-4'>
+                        <img src={pic2} alt='pic2' className='rounded-lg object-cover h-[100%]'></img>
+                        <img src={pic3} alt='pic3' className='rounded-lg object-cover h-[100%]'></img>
+                    </div>
+                </div>
+            </div>
+            <div className='mt-12'>
+                <h3 className='text-2xl text-center'>Each year, EVC has:</h3>
+                <div className='flex justify-evenly mt-8'></div>
             </div>
         </div>
     );
