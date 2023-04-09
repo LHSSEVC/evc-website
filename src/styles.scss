@@ -33,6 +33,18 @@ a {
     }
 }
 
+button {
+    background-color: #4899FF;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid theme('colors.blue');
+    transition: background .3s ease, brightness .3s ease;
+
+    &:hover {
+        background-color: darken(#4899FF, 15%);
+    }
+}
+
 .gradient {
     background: linear-gradient(94deg, theme('colors.green') 39%, theme('colors.blue') 100%);
     -webkit-background-clip: text;
