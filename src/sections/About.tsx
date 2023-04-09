@@ -20,7 +20,7 @@ const About = () => {
                 </Card>
             </div>
             <div className='flex px-[6%] mt-[5rem] gap-8'>
-                <div className='w-[50%]'>
+                <div className='w-[50%] flex flex-col justify-center'>
                     <h3 className='text-3xl'>Experiencing the engineering world first-hand</h3>
                     <p className='mt-8'>
                     LHSS Electric Vehicle Club has built several cars since its inception in 2009. Our team aims to build at least one new car each year, whilst simultaneously working to modify our pre-existing model.
@@ -41,8 +41,27 @@ const About = () => {
                 </div>
             </div>
             <div className='mt-12'>
-                <h3 className='text-2xl text-center'>Each year, EVC has:</h3>
-                <div className='flex justify-evenly mt-8'></div>
+                <h3 className='text-2xl text-center'>Each year, EVC has</h3>
+                <div className='flex justify-center gap-4 mt-8'>
+                    <div className='bg-gray-700 w-[20%] text-center p-4 py-8 rounded-md'>
+                        <p className='text-4xl text-blue'>
+                            50+
+                        </p>
+                        members
+                    </div>
+                    <div className='bg-gray-700 w-[20%] text-center p-4 py-8 rounded-md'>
+                        <p className='text-4xl text-blue'>
+                            $20000
+                        </p>
+                        worth of materials
+                    </div>
+                    <div className='bg-gray-700 w-[20%] text-center p-4 py-8 rounded-md'>
+                        <p className='text-4xl text-blue'>
+                            2
+                        </p>
+                        races
+                    </div>
+                </div>
             </div>
         </div>
     );
