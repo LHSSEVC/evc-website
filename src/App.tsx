@@ -2,6 +2,7 @@ import Landing from "./sections/Landing";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Sponsor from "./sections/Sponsor";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Landing />
             <About />
             <Sponsor />
+            <Footer />
         </>
     );
 }
