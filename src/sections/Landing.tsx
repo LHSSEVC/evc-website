@@ -1,6 +1,6 @@
-import graphic1 from '../assets/graphic1.png'
-import graphic2 from '../assets/graphic2.png'
-import pic4 from '../assets/pic4.jpg'
+import graphic1 from "../assets/graphic1.png";
+import graphic2 from "../assets/graphic2.png";
+import pic4 from "../assets/pic4.jpg";
 
 const Landing = () => {
     return (
@@ -19,20 +19,28 @@ const Landing = () => {
                     in electric vehicle design and racing.
                 </p>
                 <button
-                    onClick={() =>
-                        document
-                            .getElementById("about")
-                            ?.scrollIntoView({ behavior: "smooth" })
-                    }
+                    onClick={() => (window.location.href = "/package.pdf")}
                     className="mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90"
                 >
-                    Learn More
+                    Sponsor us!
                 </button>
             </div>
             <div className="flex flex-col justify-center w-[50%] pr-[6rem] images">
-                <img src={graphic1} alt='graphic1' className='w-[45%] self-end rounded-xl translate-x-[-3rem] translate-y-[3rem] z-0'></img>
-                <img src={pic4} alt='pic4' className='w-[70%] rounded-xl self-center z-10'></img>
-                <img src={graphic2} alt='graphic2' className='w-[35%] z-20 rounded-xl translate-y-[-4rem] translate-x-[3rem]'></img>
+                <img
+                    src={graphic1}
+                    alt="graphic1"
+                    className="w-[45%] self-end rounded-xl translate-x-[-3rem] translate-y-[3rem] z-0"
+                ></img>
+                <img
+                    src={pic4}
+                    alt="pic4"
+                    className="w-[70%] rounded-xl self-center z-10"
+                ></img>
+                <img
+                    src={graphic2}
+                    alt="graphic2"
+                    className="w-[35%] z-20 rounded-xl translate-y-[-4rem] translate-x-[3rem]"
+                ></img>
             </div>
         </div>
     );
