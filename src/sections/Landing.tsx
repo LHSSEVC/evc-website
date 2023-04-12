@@ -28,6 +28,18 @@ const Landing = () => {
                 >
                     Learn More
                 </button>
+                <button
+                    onClick={() => window.location.href='/package.pdf'} className="ml-4 mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90"
+                >
+                    View Prospectus
+                </button>
+                <br/>
+                <button
+                    onClick={() => window.open('https://lhs.wrdsb.ca/')}
+                    className="mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90"
+                >
+                    Visit LHSS Website
+                </button>
             </div>
             <div className="flex flex-col justify-center w-[50%] pr-[6rem] images">
                 <img src={graphic1} alt='graphic1' className='w-[45%] self-end rounded-xl translate-x-[-3rem] translate-y-[3rem] z-0'></img>

@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 function Footer() {
     return (
-        <div className="overflow-hidden mt-[5rem]">
+        <div className="overflow-hidden mt-[8rem]">
             <div className="skew-y-2 origin-top-left bg-blue py-32">
                 <div className="-skew-y-2 origin-top-left grid md:grid-flow-col md:auto-cols-fr items-center text-center">
                     <div>

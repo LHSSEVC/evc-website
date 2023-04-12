@@ -13,6 +13,7 @@ const Navbar = () => {
                 {sections.map((section, index) => {
                     return <a href={`#${section.toLowerCase()}`} className='decoration-2 font-semibold hover:underline underline-offset-4'>{section}</a>;
                 })}
+                <a href='/package.pdf' className='decoration-2 font-semibold hover:underline underline-offset-4'>Sponsor Package</a>
             </div>
         </div>
     );

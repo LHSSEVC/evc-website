@@ -1,12 +1,14 @@
+import pic5 from '../assets/pic5.jpg'
+
 const Sponsor = () => {
   return (
-    <div id='support us' className="mt-[5rem]">
+    <div id='support us' className="pt-[6rem]">
         <h2 className="text-5xl text-center">Support Us</h2>
         <p className='text-center text-xl mt-4 px-[20%]'>The estimated value of each car is around $7 000. This year, we hope to bring on an additional car to our garage as our previous car gets ready to retire.</p>
         <div className='flex px-[5%] mt-8 gap-4 items-center'>
-          <div className='w-[30%] p-8 mt-4'>
+          <div className='w-[30%] mt-4'>
             <h3 className='text-3xl mb-4'>Groups</h3>
-            <p>Students have the opportunity to join the following groups.<br/><br/>As a subsidiary of SJAM Technology and Engineering, members develop valuable skills: electrical and mechanical engineering and AutoCAD. As much as we focus on engineering, EVC is a team-based club.</p>
+            <p>Students have the opportunity to join the following groups.<br/><br/>As a subsidiary of LHSS Technology and Engineering, members develop valuable skills: electrical and mechanical engineering and AutoCAD. As much as we focus on engineering, EVC is a team-based club.</p>
           </div>
           <div className='w-[35%] flex flex-col gap-4'>
             <div className='p-4 w-full border-blue border-[1px] rounded-sm text-center'>Mechanical</div>
@@ -21,12 +23,15 @@ const Sponsor = () => {
             <div className='p-4 w-full border-blue border-[1px] rounded-sm text-center'>Woodworking</div>
           </div>
         </div>
-        <div className='mt-12 px-[20%] flex justify-between'>
-          <div>
-            <h3 className='text-3xl'>Sponsorship Prospectus</h3>
-            <p>Sponsor us today and support the future innovators of tech. </p>
+        <div className='mt-[4rem] px-[5%] flex justify-between gap-8'>
+          <div className='w-[60%]'>
+            <h3 className='text-3xl mb-4'>Sponsorship Prospectus</h3>
+            <p>In order to continue to offer this experience to current and future students of LHSS, we are seeking sponsorship from individuals, businesses, corporations, and organizations. Our team would appreciate any financial support that you are able to provide us. We are also open to any support by supplying us with any of the listed materials that can be found in our <a href='/package.pdf'>prospectus</a>. 
+            <br/><br/>Additionally, mentors with experience in any of the groups found on the <a href='/package.pdf'>prospectus</a> visiting for a workshop or talk would be greatly appreciated.<br/><br/>Sponsor us today and support the future innovators of tech. </p>
+            <button onClick={() => window.location.href='/package.pdf'} className='mt-4'>View Sponsorship Package</button>
+            <button onClick={() => window.open('https://docs.google.com/document/d/1ikCvpgrNkIX4J_g4hpdmcniawIHCKofy_OtoMjwNDHM/edit')} className='mt-4 ml-4'>Sponsor Instructions</button>
           </div>
-          <button onClick={() => window.location.href='/package.pdf'}>View Sponsorship Package</button>
+          <img src={pic5} alt='pic5' className='w-[30%] rounded-2xl'></img>
         </div> 
     </div>
   )
