@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 function Footer() {
     return (
         <div className="overflow-hidden mt-[5rem]">
-            <div className="skew-y-2 origin-top-left bg-blue py-32">
+            <div className="skew-y-2 origin-top-left bg-blue py-20">
                 <div className="-skew-y-2 origin-top-left grid md:grid-flow-col md:auto-cols-fr items-center text-center">
                     <div>
                         <a
@@ -33,7 +33,7 @@ function Footer() {
                         </p>
                     </div>
                     <div>
-                        <div className="flex justify-evenly my-8">
+                        <div className="flex justify-evenly my-16">
                             <a
                                 href="https://www.instagram.com/sjamevc/"
                                 className="text-[#104A8A]"
@@ -49,7 +49,7 @@ function Footer() {
                                 <i className="bi bi-envelope-fill text-[4rem]" />
                             </a>
                         </div>
-                        <div className="flex justify-evenly my-8">
+                        <div className="flex justify-evenly my-16">
                             <a className="text-white">Sponsorship Prospectus</a>
                         </div>
                     </div>
