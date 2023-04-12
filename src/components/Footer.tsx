@@ -42,7 +42,7 @@ function Footer() {
                                 <i className="bi bi-instagram text-[4rem]" />
                             </a>
                             <a
-                                href="mailto:evc.sjam@gmail.com"
+                                href="mailto:lhssevc@gmail.com"
                                 className="text-[#104A8A]"
                                 target="_blank"
                             >
