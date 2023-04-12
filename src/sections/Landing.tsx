@@ -1,8 +1,10 @@
-import world from '../assets/world.png'
+import graphic1 from '../assets/graphic1.png'
+import graphic2 from '../assets/graphic2.png'
+import pic4 from '../assets/pic4.jpg'
 
 const Landing = () => {
     return (
-        <div className="Landing flex px-[5rem] h-[95vh] Landing">
+        <div className="Landing flex px-[5rem] h-[90vh] from-bg to-gray-800 via-bg bg-gradient-to-r">
             <div className="w-[50%] mt-[10rem]">
                 <h2 className="text-dimmed text-2xl mb-4">
                     Laurel Heights Electric Vehicle Club
@@ -11,8 +13,10 @@ const Landing = () => {
                 <p className='text-dimmed text-xl'>Join a team of creative and curious students who are passionate about pushing the boundaries of what's possible in electric vehicle design and racing.</p>
                 <button onClick={() => document.getElementById('about')?.scrollIntoView()} className='mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90'>Learn More</button>
             </div>
-            <div className="flex items-center justify-center w-[50%]">
-                <a>car goes here</a>
+            <div className="flex flex-col justify-center w-[50%] pr-[6rem] images">
+                <img src={graphic1} alt='graphic1' className='w-[45%] self-end rounded-xl translate-x-[-3rem] translate-y-[3rem] z-0'></img>
+                <img src={pic4} alt='pic4' className='w-[70%] rounded-xl self-center z-10'></img>
+                <img src={graphic2} alt='graphic2' className='w-[35%] z-20 rounded-xl translate-y-[-4rem] translate-x-[3rem]'></img>
             </div>
         </div>
     );

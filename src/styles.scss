@@ -51,3 +51,12 @@ button {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.Landing {
+    background-image:
+radial-gradient(at 0% 100%, hsla(250,27%,8%,1) 0px, transparent 50%),
+radial-gradient(at 75% 48%, hsla(215,27%,16%,1) 0px, transparent 50%);
+    .images img {
+        box-shadow: 0px 0px 25px #1f2937; 
+    }
+}

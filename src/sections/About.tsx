@@ -5,7 +5,7 @@ import pic3 from '../assets/pic3.jpg'
 
 const About = () => {
     return (
-        <div id="about" className="About p-[5rem] from-bg to-bg via-gray-800 bg-gradient-to-b">
+        <div id="about" className="About p-[5rem] from-bg to-bg via-gray-800 bg-gradient-to-b pt-[7rem]">
             <h2 className="text-5xl text-center">About Us</h2>
             <p className='px-[20%] mt-4 text-lg text-center'>The Electric Vehicle Club is a team-based, STEM-related, project-oriented, student-driven, extracurricular project that centres around the design and construction of 12V and 24V electrically powered cars.</p>
             <div className='flex justify-evenly mt-12'>
