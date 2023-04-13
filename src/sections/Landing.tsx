@@ -20,21 +20,10 @@ const Landing = () => {
                 </p>
                 <button
                     onClick={() => (window.location.href = "/package.pdf")}
-                    className="mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90"
+                    className="mt-16 py-2 px-8 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90 font-bold"
                 >
-                    Sponsor us!
-                </button>
-                <button
-                    onClick={() => window.location.href='/package.pdf'} className="ml-4 mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90"
-                >
-                    View Prospectus
-                </button>
-                <br/>
-                <button
-                    onClick={() => window.open('https://lhs.wrdsb.ca/')}
-                    className="mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90"
-                >
-                    Visit LHSS Website
+                    Sponsor the innovators of tomorrow{" "}
+                    <i className="bi bi-arrow-right" />
                 </button>
             </div>
             <div className="flex flex-col justify-center w-[50%] pr-[6rem] images">
