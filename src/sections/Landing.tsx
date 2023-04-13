@@ -20,7 +20,7 @@ const Landing = () => {
                 </p>
                 <button
                     onClick={() => (window.location.href = "/package.pdf")}
-                    className="mt-16 py-2 px-8 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90 font-bold"
+                    className="mt-8 py-2 px-8 bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-90 font-bold"
                 >
                     Sponsor the innovators of tomorrow{" "}
                     <i className="bi bi-arrow-right" />
