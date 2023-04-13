@@ -16,7 +16,7 @@ const About = () => {
                 centres around the design and construction of 12V and 24V
                 electrically powered cars.
             </p>
-            <div className="grid md:grid-flow-col md:auto-cols-fr gap-16 justify-evenly mt-12">
+            <div className="grid lg:grid-flow-col lg:auto-cols-fr gap-16 justify-evenly mt-12">
                 <Card rgb="72,153,255" title="Our mission" icon="globe">
                     <p>
                         Our mission is to provide an opportunity for young
@@ -50,8 +50,8 @@ const About = () => {
                     </p>
                 </Card>
             </div>
-            <div className="flex px-[6%] mt-[5rem] gap-8">
-                <div className="w-[50%] flex flex-col justify-center">
+            <div className="block lg:flex px-[6%] mt-[5rem] gap-8">
+                <div className="w-full lg:w-[50%] flex flex-col justify-center">
                     <h3 className="text-3xl">
                         Experiencing the engineering world first-hand
                     </h3>
@@ -76,7 +76,7 @@ const About = () => {
                         experience it first-hand.
                     </p>
                 </div>
-                <div className="w-[50%] flex gap-4 items-center">
+                <div className="w-full lg:w-[50%] flex gap-4 items-center">
                     <div className="w-[50%] h-[100%] flex items-center">
                         <img
                             src={pic1}
@@ -100,16 +100,16 @@ const About = () => {
             </div>
             <div className="mt-12">
                 <h3 className="text-2xl text-center">Each year, EVC has</h3>
-                <div className="flex justify-center gap-4 mt-8">
-                    <div className="bg-gray-700 w-[20%] text-center p-4 py-8 rounded-md">
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-8">
+                    <div className="bg-gray-700 w-[60%] lg:w-[20%] text-center p-4 py-8 rounded-md">
                         <p className="text-4xl text-blue">50+</p>
                         members
                     </div>
-                    <div className="bg-gray-700 w-[20%] text-center p-4 py-8 rounded-md">
+                    <div className="bg-gray-700 w-[60%] lg:w-[20%] text-center p-4 py-8 rounded-md">
                         <p className="text-4xl text-blue">$20000</p>
                         worth of materials
                     </div>
-                    <div className="bg-gray-700 w-[20%] text-center p-4 py-8 rounded-md">
+                    <div className="bg-gray-700 w-[60%] lg:w-[20%] text-center p-4 py-8 rounded-md">
                         <p className="text-4xl text-blue">2</p>
                         races
                     </div>

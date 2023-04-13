@@ -4,8 +4,8 @@ import pic4 from "../assets/pic4.jpg";
 
 const Landing = () => {
     return (
-        <div className="Landing flex px-[5rem] h-[90vh] from-bg to-gray-800 via-bg bg-gradient-to-r">
-            <div className="w-[50%] mt-[10rem]">
+        <div className="Landing block lg:flex px-[5rem] h-auto lg:h-[90vh] from-bg to-gray-800 via-bg bg-gradient-to-r">
+            <div className="w-[100%] lg:w-[50%] mt-[10rem]">
                 <h2 className="text-dimmed text-2xl mb-4">
                     Laurel Heights Electric Vehicle Club
                 </h2>
@@ -26,7 +26,7 @@ const Landing = () => {
                     <i className="bi bi-arrow-right" />
                 </button>
             </div>
-            <div className="flex flex-col justify-center w-[50%] pr-[6rem] images">
+            <div className="flex flex-col justify-center w-[100%] lg:w-1/2 pr-0 lg:pr-[6rem] images">
                 <img
                     src={graphic1}
                     alt="graphic1"
