@@ -2,12 +2,14 @@ import Card from "../components/Card";
 import pic1 from "../assets/pic1.jpg";
 import pic2 from "../assets/pic2.jpg";
 import pic3 from "../assets/pic3.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => {
     return (
         <div
             id="about"
-            className="About p-[5rem] from-bg to-bg via-gray-800 bg-gradient-to-b pt-[7rem]"
+            className="About p-[5rem] from-bg to-bg via-gray-800 bg-gradient-to-b pt-[7rem] block"
         >
             <h2 className="text-5xl text-center">About Us</h2>
             <p className="px-[20%] mt-4 text-lg text-center">
@@ -76,25 +78,28 @@ const About = () => {
                         experience it first-hand.
                     </p>
                 </div>
-                <div className="w-full lg:w-[50%] flex gap-4 items-center">
+                <div className="w-full lg:w-[50%] mt-8 flex gap-4 items-center">
                     <div className="w-[50%] h-[100%] flex items-center">
-                        <img
+                        <LazyLoadImage
                             src={pic1}
                             alt="pic1"
                             className="rounded-lg object-cover"
-                        ></img>
+                            effect='blur'
+                        ></LazyLoadImage>
                     </div>
                     <div className="w-[50%] flex-col flex gap-4">
-                        <img
+                        <LazyLoadImage
                             src={pic2}
                             alt="pic2"
                             className="rounded-lg object-cover h-[100%]"
-                        ></img>
-                        <img
+                            effect='blur'
+                        ></LazyLoadImage>
+                        <LazyLoadImage
                             src={pic3}
                             alt="pic3"
                             className="rounded-lg object-cover h-[100%]"
-                        ></img>
+                            effect='blur'
+                        ></LazyLoadImage>
                     </div>
                 </div>
             </div>

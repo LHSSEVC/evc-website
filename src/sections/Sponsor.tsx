@@ -1,4 +1,6 @@
 import pic5 from '../assets/pic5.jpg'
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Sponsor = () => {
   return (
@@ -24,14 +26,16 @@ const Sponsor = () => {
           </div>
         </div>
         <div className='mt-[4rem] px-[5%] flex-col lg:flex-row flex items-center justify-between gap-8'>
-          <div className='w-[80%] lg:w-[60%]'>
+          <div className='w-[70%]'>
             <h3 className='text-3xl mb-4 text-center lg:text-left'>Sponsorship Prospectus</h3>
             <p>In order to continue to offer this experience to current and future students of LHSS, we are seeking sponsorship from individuals, businesses, corporations, and organizations. Our team would appreciate any financial support that you are able to provide us. We are also open to any support by supplying us with any of the listed materials that can be found in our <a href='/package.pdf'>prospectus</a>. 
             <br/><br/>Additionally, mentors with experience in any of the groups found on the <a href='/package.pdf'>prospectus</a> visiting for a workshop or talk would be greatly appreciated.<br/><br/>Sponsor us today and support the future innovators of tech. </p>
             <button onClick={() => window.location.href='/package.pdf'} className='mt-4 mr-4'>View Sponsorship Package</button>
             <button onClick={() => window.open('https://docs.google.com/document/d/1ikCvpgrNkIX4J_g4hpdmcniawIHCKofy_OtoMjwNDHM/edit')} className='mt-4'>Sponsor Instructions</button>
           </div>
-          <img src={pic5} alt='pic5' className='w-[70%] lg:w-[30%] h-auto object-cover rounded-2xl'></img>
+          <div className='lg:w-[30%] w-1/2'>
+            <LazyLoadImage src={pic5} alt='pic5' effect='blur' className='h-auto object-cover rounded-2xl'></LazyLoadImage>
+          </div>
         </div> 
     </div>
   )

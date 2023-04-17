@@ -1,4 +1,6 @@
 import logo from "../assets/logo.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Footer() {
     return (
@@ -20,12 +22,13 @@ function Footer() {
                         </p>
                     </div>
                     <div>
-                        <img
+                        <LazyLoadImage
                             src={logo}
                             alt="EVC logo"
                             width={300}
                             className="mx-auto"
-                        />
+                            effect='blur'
+                        ></LazyLoadImage>
                         <br />
                         <p className="text-white">
                             Copyright © 2023 Laurel Heights Secondary School
